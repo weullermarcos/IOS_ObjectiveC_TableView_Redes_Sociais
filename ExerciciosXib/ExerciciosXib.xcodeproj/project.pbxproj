@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D320AF961DCF8D64009D4FFA /* FacebookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D320AF941DCF8D64009D4FFA /* FacebookTableViewCell.m */; };
+		D320AF971DCF8D64009D4FFA /* FacebookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D320AF951DCF8D64009D4FFA /* FacebookTableViewCell.xib */; };
+		D320AF9A1DCF8E80009D4FFA /* FacebookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D320AF991DCF8E80009D4FFA /* FacebookTableViewController.m */; };
 		D3C31DC51DCF58AC00EC45BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C31DC41DCF58AC00EC45BA /* main.m */; };
 		D3C31DC81DCF58AC00EC45BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C31DC71DCF58AC00EC45BA /* AppDelegate.m */; };
 		D3C31DCB1DCF58AC00EC45BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C31DCA1DCF58AC00EC45BA /* ViewController.m */; };
@@ -20,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D320AF931DCF8D64009D4FFA /* FacebookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookTableViewCell.h; sourceTree = "<group>"; };
+		D320AF941DCF8D64009D4FFA /* FacebookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookTableViewCell.m; sourceTree = "<group>"; };
+		D320AF951DCF8D64009D4FFA /* FacebookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookTableViewCell.xib; sourceTree = "<group>"; };
+		D320AF981DCF8E80009D4FFA /* FacebookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookTableViewController.h; sourceTree = "<group>"; };
+		D320AF991DCF8E80009D4FFA /* FacebookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookTableViewController.m; sourceTree = "<group>"; };
 		D3C31DC01DCF58AC00EC45BA /* ExerciciosXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciciosXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C31DC41DCF58AC00EC45BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3C31DC61DCF58AC00EC45BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +104,8 @@
 			children = (
 				D3C31DEA1DCF5AB900EC45BA /* InstagramTableViewController.h */,
 				D3C31DEB1DCF5AB900EC45BA /* InstagramTableViewController.m */,
+				D320AF981DCF8E80009D4FFA /* FacebookTableViewController.h */,
+				D320AF991DCF8E80009D4FFA /* FacebookTableViewController.m */,
 			);
 			name = TableViews;
 			sourceTree = "<group>";
@@ -107,6 +117,9 @@
 				D3C31DE51DCF5A3A00EC45BA /* InstagramTableViewCell.h */,
 				D3C31DE61DCF5A3A00EC45BA /* InstagramTableViewCell.m */,
 				D3C31DE71DCF5A3A00EC45BA /* InstagramTableViewCell.xib */,
+				D320AF931DCF8D64009D4FFA /* FacebookTableViewCell.h */,
+				D320AF941DCF8D64009D4FFA /* FacebookTableViewCell.m */,
+				D320AF951DCF8D64009D4FFA /* FacebookTableViewCell.xib */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -173,6 +186,7 @@
 				D3C31DD61DCF58AC00EC45BA /* LaunchScreen.storyboard in Resources */,
 				D3C31DD31DCF58AC00EC45BA /* Assets.xcassets in Resources */,
 				D3C31DCE1DCF58AC00EC45BA /* Main.storyboard in Resources */,
+				D320AF971DCF8D64009D4FFA /* FacebookTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C31DCB1DCF58AC00EC45BA /* ViewController.m in Sources */,
+				D320AF9A1DCF8E80009D4FFA /* FacebookTableViewController.m in Sources */,
 				D3C31DC81DCF58AC00EC45BA /* AppDelegate.m in Sources */,
 				D3C31DE81DCF5A3A00EC45BA /* InstagramTableViewCell.m in Sources */,
+				D320AF961DCF8D64009D4FFA /* FacebookTableViewCell.m in Sources */,
 				D3C31DC51DCF58AC00EC45BA /* main.m in Sources */,
 				D3C31DEC1DCF5AB900EC45BA /* InstagramTableViewController.m in Sources */,
 				D3C31DD11DCF58AC00EC45BA /* ExerciciosXib.xcdatamodeld in Sources */,
@@ -343,6 +359,7 @@
 				D3C31DDC1DCF58AC00EC45BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
