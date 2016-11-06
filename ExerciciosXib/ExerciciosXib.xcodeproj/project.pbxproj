@@ -20,6 +20,9 @@
 		D3C31DE81DCF5A3A00EC45BA /* InstagramTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C31DE61DCF5A3A00EC45BA /* InstagramTableViewCell.m */; };
 		D3C31DE91DCF5A3A00EC45BA /* InstagramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3C31DE71DCF5A3A00EC45BA /* InstagramTableViewCell.xib */; };
 		D3C31DEC1DCF5AB900EC45BA /* InstagramTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C31DEB1DCF5AB900EC45BA /* InstagramTableViewController.m */; };
+		D3FFF6CA1DCF9E4200F2FC10 /* TwitterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FFF6C91DCF9E4200F2FC10 /* TwitterTableViewController.m */; };
+		D3FFF6CE1DCF9EA600F2FC10 /* TwitterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FFF6CC1DCF9EA600F2FC10 /* TwitterTableViewCell.m */; };
+		D3FFF6CF1DCF9EA600F2FC10 /* TwitterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3FFF6CD1DCF9EA600F2FC10 /* TwitterTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,11 @@
 		D3C31DE71DCF5A3A00EC45BA /* InstagramTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstagramTableViewCell.xib; sourceTree = "<group>"; };
 		D3C31DEA1DCF5AB900EC45BA /* InstagramTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramTableViewController.h; sourceTree = "<group>"; };
 		D3C31DEB1DCF5AB900EC45BA /* InstagramTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramTableViewController.m; sourceTree = "<group>"; };
+		D3FFF6C81DCF9E4200F2FC10 /* TwitterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterTableViewController.h; sourceTree = "<group>"; };
+		D3FFF6C91DCF9E4200F2FC10 /* TwitterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTableViewController.m; sourceTree = "<group>"; };
+		D3FFF6CB1DCF9EA600F2FC10 /* TwitterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterTableViewCell.h; sourceTree = "<group>"; };
+		D3FFF6CC1DCF9EA600F2FC10 /* TwitterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTableViewCell.m; sourceTree = "<group>"; };
+		D3FFF6CD1DCF9EA600F2FC10 /* TwitterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,7 @@
 			children = (
 				D3C31DED1DCF5AC000EC45BA /* TableViews */,
 				D3C31DEE1DCF5AD800EC45BA /* Xibs */,
+				D3C31DC61DCF58AC00EC45BA /* AppDelegate.h */,
 				D3C31DC71DCF58AC00EC45BA /* AppDelegate.m */,
 				D3C31DC91DCF58AC00EC45BA /* ViewController.h */,
 				D3C31DCA1DCF58AC00EC45BA /* ViewController.m */,
@@ -106,6 +115,8 @@
 				D3C31DEB1DCF5AB900EC45BA /* InstagramTableViewController.m */,
 				D320AF981DCF8E80009D4FFA /* FacebookTableViewController.h */,
 				D320AF991DCF8E80009D4FFA /* FacebookTableViewController.m */,
+				D3FFF6C81DCF9E4200F2FC10 /* TwitterTableViewController.h */,
+				D3FFF6C91DCF9E4200F2FC10 /* TwitterTableViewController.m */,
 			);
 			name = TableViews;
 			sourceTree = "<group>";
@@ -113,13 +124,15 @@
 		D3C31DEE1DCF5AD800EC45BA /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				D3C31DC61DCF58AC00EC45BA /* AppDelegate.h */,
 				D3C31DE51DCF5A3A00EC45BA /* InstagramTableViewCell.h */,
 				D3C31DE61DCF5A3A00EC45BA /* InstagramTableViewCell.m */,
 				D3C31DE71DCF5A3A00EC45BA /* InstagramTableViewCell.xib */,
 				D320AF931DCF8D64009D4FFA /* FacebookTableViewCell.h */,
 				D320AF941DCF8D64009D4FFA /* FacebookTableViewCell.m */,
 				D320AF951DCF8D64009D4FFA /* FacebookTableViewCell.xib */,
+				D3FFF6CB1DCF9EA600F2FC10 /* TwitterTableViewCell.h */,
+				D3FFF6CC1DCF9EA600F2FC10 /* TwitterTableViewCell.m */,
+				D3FFF6CD1DCF9EA600F2FC10 /* TwitterTableViewCell.xib */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -183,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C31DE91DCF5A3A00EC45BA /* InstagramTableViewCell.xib in Resources */,
+				D3FFF6CF1DCF9EA600F2FC10 /* TwitterTableViewCell.xib in Resources */,
 				D3C31DD61DCF58AC00EC45BA /* LaunchScreen.storyboard in Resources */,
 				D3C31DD31DCF58AC00EC45BA /* Assets.xcassets in Resources */,
 				D3C31DCE1DCF58AC00EC45BA /* Main.storyboard in Resources */,
@@ -198,6 +212,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C31DCB1DCF58AC00EC45BA /* ViewController.m in Sources */,
+				D3FFF6CE1DCF9EA600F2FC10 /* TwitterTableViewCell.m in Sources */,
+				D3FFF6CA1DCF9E4200F2FC10 /* TwitterTableViewController.m in Sources */,
 				D320AF9A1DCF8E80009D4FFA /* FacebookTableViewController.m in Sources */,
 				D3C31DC81DCF58AC00EC45BA /* AppDelegate.m in Sources */,
 				D3C31DE81DCF5A3A00EC45BA /* InstagramTableViewCell.m in Sources */,
