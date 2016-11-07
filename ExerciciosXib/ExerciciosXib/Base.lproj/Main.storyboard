@@ -18,32 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYO-fn-jh9">
-                                <frame key="frameInset" minX="154" minY="318" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Facebook"/>
-                                <connections>
-                                    <segue destination="czi-m0-sdc" kind="show" id="wK0-XH-gli"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiA-lU-sIb">
-                                <frame key="frameInset" minX="164" minY="437" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiA-lU-sIb">
                                 <state key="normal" title="Twitter"/>
                                 <connections>
                                     <segue destination="XMf-gQ-s4W" kind="show" id="hn0-sD-S7k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJM-vP-7Q1">
-                                <frame key="frameInset" minX="154" minY="213" width="69" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Instagram"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NAq-hd-Y0X">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJM-vP-7Q1">
+                                        <state key="normal" title="Instagram"/>
+                                        <connections>
+                                            <segue destination="XuJ-bd-6aR" kind="show" id="c6q-Qr-fng"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYO-fn-jh9">
+                                <state key="normal" title="Facebook"/>
                                 <connections>
-                                    <segue destination="XuJ-bd-6aR" kind="show" id="c6q-Qr-fng"/>
+                                    <segue destination="czi-m0-sdc" kind="show" id="wK0-XH-gli"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KYO-fn-jh9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DIF-Mv-vCM"/>
+                            <constraint firstItem="MiA-lU-sIb" firstAttribute="top" secondItem="KYO-fn-jh9" secondAttribute="bottom" constant="89" id="DdT-KK-BMq"/>
+                            <constraint firstItem="KYO-fn-jh9" firstAttribute="leading" secondItem="NAq-hd-Y0X" secondAttribute="leading" id="IRi-Sj-2fs"/>
+                            <constraint firstItem="KYO-fn-jh9" firstAttribute="top" secondItem="NAq-hd-Y0X" secondAttribute="bottom" constant="75" id="c8X-TH-6Ql"/>
+                            <constraint firstItem="KYO-fn-jh9" firstAttribute="centerX" secondItem="MiA-lU-sIb" secondAttribute="centerX" id="smK-iB-kdK"/>
+                            <constraint firstItem="KYO-fn-jh9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yRr-GR-3cz"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home Page" id="3Ye-Dh-yud"/>
                 </viewController>
@@ -64,7 +70,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tYH-QX-89w" id="Pkg-i9-qzY">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -92,7 +98,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zmB-Z7-j2E" id="i7n-5w-nNU">
-                                    <frame key="frameInset" width="375" height="39"/>
+                                    <frame key="frameInset" width="375" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -120,7 +126,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VnH-f5-O5g" id="tjI-OE-XAq">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
