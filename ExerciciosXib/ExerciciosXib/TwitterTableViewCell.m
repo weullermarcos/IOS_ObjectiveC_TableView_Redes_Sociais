@@ -13,7 +13,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
 
-    self.profile.layer.cornerRadius = self.profile.frame.size.width / 10.0;
+    self.profile.layer.cornerRadius = self.profile.frame.size.width * 0.01;
     self.profile.clipsToBounds = YES;
     
 }
